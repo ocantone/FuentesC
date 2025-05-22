@@ -1,3 +1,4 @@
+/**  Resolución Tema 2 1° Parcial 15/5/25  */
 #include <stdio.h>
 #include <stdlib.h>
 
