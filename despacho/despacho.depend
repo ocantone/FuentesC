@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1746799611 source:c:\users\ocant\documents\fuentes c\despacho\despacho.c
+	<stdio.h>
+	<stdlib.h>
+
