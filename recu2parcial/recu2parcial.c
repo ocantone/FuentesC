@@ -54,33 +54,33 @@ int main() {
         if (pos == -1) {
            printf("Cliente no encontrado.\n");
         } else {
-        printf("Cuenta: %d\tSaldo: %.2f\n", cuenta[pos], saldo[pos]);
-        printf("1. Extracción 2. Depósito\nOpción: ");
-        scanf("%d", &op);
-        printf("Monto: ");
-        scanf("%f", &monto);
-        printf("\n--- TICKET DE MOVIMIENTO ---\n");
-        printf("Empleado: %d\n", emp);
-        printf("DNI: %d\n", dni[pos]);
-        printf("Cuenta: %d\n", cuenta[pos]);
-        printf("Saldo Anterior: %.2f\n", saldo[pos]);
-        if (op == 2) {
-        saldo[pos] += monto;
-        cuentaDep[dep] = cuenta[pos];
-        saldoDep[dep] = saldo[pos];
-        dep++;
-        printf("Monto depositado: %.2f\n", monto);
-        } else {
-        if(saldo[pos] >= monto){
-        saldo[pos] -= monto;
-        ext++;
-        printf("Monto extraído: %.2f\n", monto);
-        }
-        else
-        printf ("Saldo insuficiente\n");
-        }
-        printf("Saldo Actual: %.2f\n", saldo[pos]);
-        }
+            printf("Cuenta: %d\tSaldo: %.2f\n", cuenta[pos], saldo[pos]);
+            printf("1. Extracción 2. Depósito\nOpción: ");
+            scanf("%d", &op);
+            printf("Monto: ");
+            scanf("%f", &monto);
+            printf("\n--- TICKET DE MOVIMIENTO ---\n");
+            printf("Empleado: %d\n", emp);
+            printf("DNI: %d\n", dni[pos]);
+            printf("Cuenta: %d\n", cuenta[pos]);
+            printf("Saldo Anterior: %.2f\n", saldo[pos]);
+            if (op == 2) {
+                saldo[pos] += monto;
+                cuentaDep[dep] = cuenta[pos];
+                saldoDep[dep] = saldo[pos];
+                dep++;
+                printf("Monto depositado: %.2f\n", monto);
+                } else {
+                    if(saldo[pos] >= monto){
+                        saldo[pos] -= monto;
+                        ext++;
+                        printf("Monto extraído: %.2f\n", monto);
+                    }
+                    else
+                        printf ("Saldo insuficiente\n");
+                }
+            printf("Saldo Actual: %.2f\n", saldo[pos]);
+            }
         printf("\n-----------------------------\nNúmero de Empleado (0 para finalizar): ");
         scanf("%d", &emp);
     }
